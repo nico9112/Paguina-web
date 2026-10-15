@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Inicio | El Niño y el Supernino</title>
+<style>
+:root{--bg:#EAF4F4;--ink:#0B2A3C;--sea:#1F7A8C;--deep:#0B2A3C;--accent:#E4572E;--card:#FFFFFF;--line:#B9D6D8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B2A3C;--ink:#E6F2F2;--sea:#7CC4D0;--deep:#06202D;--card:#123A4F;--line:#2A5468}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.7;font-size:1.05rem;min-height:100vh}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+nav{background:var(--deep);position:sticky;top:0;z-index:5}
+nav ul{list-style:none;margin:0 auto;padding:0;display:flex;flex-wrap:wrap;max-width:960px}
+nav a{display:block;padding:1rem 1.4rem;color:#EAF4F4;text-decoration:none;font-family:system-ui,sans-serif;font-weight:600;border-bottom:4px solid transparent}
+nav a:hover,nav a:focus-visible{border-bottom-color:var(--sea);outline:none}
+@media (max-width:520px){nav ul{justify-content:space-between}nav a{padding:.9rem .6rem;font-size:.85rem}}nav a.activo{border-bottom-color:var(--accent)}
+main{max-width:960px;margin:0 auto;padding:2rem 1.2rem 4rem}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.1;margin:.5rem 0 1rem}
+h2{font-size:1.6rem;margin:2.5rem 0 .6rem;color:var(--sea)}
+p{max-width:70ch}
+.intro{font-size:1.2rem}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.caja{background:var(--card);border-left:5px solid var(--accent);padding:1rem 1.2rem;border-radius:4px}
+.caja h3{margin:.2rem 0 .4rem;font-size:1.1rem}
+.caja p{margin:0}
+.datos{width:100%;max-width:100%;border-collapse:collapse;background:var(--card)}
+.datos th,.datos td{text-align:left;padding:.6rem .8rem;border-bottom:1px solid var(--line)}
+.tabla{overflow-x:auto}
+</style>
+</head>
+<body>
+<nav aria-label="Principal"><ul><li><a href="index.html" class="activo" aria-current="page">Inicio</a></li><li><a href="lengua-castellana.html">Lengua Castellana</a></li><li><a href="educacion-ambiental.html">Educación Ambiental</a></li></ul></nav>
+<main>
+<h1>El fenómeno de El Niño y el Superniño</h1>
+<p class="intro">El Niño es un calentamiento anormal de las aguas superficiales del océano Pacífico tropical central y oriental. Cambia la circulación de la atmósfera y altera el clima en gran parte del planeta.</p>
+
+<h2>¿Qué es El Niño?</h2>
+<p>Forma parte del ciclo llamado ENSO (El Niño-Oscilación del Sur). Se repite cada 2 a 7 años y suele durar entre 9 y 12 meses. Su fase contraria, con aguas más frías de lo normal, se llama La Niña. El nombre viene de los pescadores peruanos, que notaban el agua cálida hacia Navidad, en honor al Niño Jesús.</p>
+
+<h2>¿Qué es el Superniño?</h2>
+<p>Es un El Niño de intensidad extrema. Se considera así cuando la temperatura del mar en la región Niño 3.4 supera en más de 2 °C el valor normal durante varios meses. Los más recordados son los de 1982-83, 1997-98 y 2015-16.</p>
+<div class="tabla"><table class="datos">
+<tr><th>Evento</th><th>Efectos destacados</th></tr>
+<tr><td>1982-83</td><td>Sequías en Australia e Indonesia, inundaciones en Ecuador y Perú</td></tr>
+<tr><td>1997-98</td><td>Grandes incendios en Indonesia, lluvias torrenciales en la costa del Pacífico americano</td></tr>
+<tr><td>2015-16</td><td>Blanqueamiento masivo de corales y sequía en África austral</td></tr>
+</table></div>
+
+<h2>Causas</h2>
+<div class="grid">
+<div class="caja"><h3>Debilitamiento de los vientos alisios</h3><p>Normalmente empujan el agua cálida hacia el oeste del Pacífico. Cuando se aflojan, esa agua se desplaza hacia el este.</p></div>
+<div class="caja"><h3>Menos afloramiento de agua fría</h3><p>Frente a Sudamérica deja de subir agua profunda y fría, y la superficie se calienta.</p></div>
+<div class="caja"><h3>Interacción océano-atmósfera</h3><p>El mar más cálido cambia la presión y las lluvias, lo que debilita aún más los vientos. Así se refuerza el fenómeno.</p></div>
+<div class="caja"><h3>Calentamiento global</h3><p>El océano ya parte de una temperatura más alta, lo que puede hacer que los eventos fuertes sean más dañinos.</p></div>
+</div>
+
+<h2>Consecuencias</h2>
+<div class="grid">
+<div class="caja"><h3>Inundaciones</h3><p>Lluvias intensas en la costa de Perú y Ecuador, el sur de Brasil y el sur de Estados Unidos.</p></div>
+<div class="caja"><h3>Sequías e incendios</h3><p>Menos lluvia en Australia, Indonesia, Centroamérica y el norte de Sudamérica.</p></div>
+<div class="caja"><h3>Ecosistemas marinos</h3><p>Se reduce la pesca de anchoveta, mueren corales y se alteran las rutas de peces y aves marinas.</p></div>
+<div class="caja"><h3>Economía y salud</h3><p>Pérdidas agrícolas, aumento de precios de alimentos y más casos de dengue y otras enfermedades transmitidas por mosquitos.</p></div>
+<div class="caja"><h3>Temperaturas récord</h3><p>El calor extra del Pacífico eleva la temperatura media global durante el evento.</p></div>
+</div>
+</main>
+</body>
+</html>
